@@ -4,7 +4,7 @@
 
 Elevate your computer's potential with a sprinkle of magic and a touch of fun. Dive into the future where downloading RAM is just a click away!
 
-![Banner Image](url-to-banner-image-if-you-have-one)
+<img src="./superramservers.png" width="300">
 
 ## 🌟 Features
 - **Dynamic RAM Choices:** Choose from 1GB all the way up to 256GB!
