@@ -3,8 +3,10 @@
 # 🚀 RAM Booster Website
 
 Elevate your computer's potential with a sprinkle of magic and a touch of fun. Dive into the future where downloading RAM is just a click away!
+<div align="center">
+<img src="./superramservers.png" width="250" height="200"> <img src="./ram.png" width="250" height="200"> <img src="./ram_chip.png" width="250" height="200"> 
+</div>
 
-<img src="./superramservers.png" width="125">
 
 ## 🌟 Features
 - **Dynamic RAM Choices:** Choose from 1GB all the way up to 256GB!
