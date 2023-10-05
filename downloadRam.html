@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download RAM</title>
+
+
+    <!-- Including Bootstrap CSS from CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            scroll-behavior: smooth; /* For smooth scrolling */
+        }
+
+        .background {
+            animation: gradient 15s ease infinite;
+            background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+            background-size: 400% 400%;
+            min-height: 100%; /* Ensures background covers at least the viewport height */
+            padding-bottom: 50px; /* Optional spacing at the bottom */
+        }
+
+        .content {
+            /*position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);*/
+            padding: 50px 0; /* add some padding to space things out */
+        }
+
+        .progress {
+            height: 35px; /* Increase the height for a chunkier bar */
+            border-radius: 20px; /* Rounded outer container */
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white for the background to make it slightly visible */
+            overflow: hidden; /* Ensures inner bar stays rounded */
+        }
+        
+        .progress-bar-custom {
+            height: 100%;
+            background-image: linear-gradient(to right, #23A6D5, #23D5AB, #EE7752, #E73C7E); /* Pleasant gradient */
+            border-radius: 20px; /* Rounded inner bar */
+            transition: width 0.6s ease; /* Smooth transition */
+        }
+
+
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+         .laptop {
+            font-size: 24px;
+            text-align: center;
+            margin: 40px;
+            color: white; /* The stroke color for the SVG */
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">RAM Booster</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactSection">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="background">
+        <!-- RAM Download Section -->
+        <div class="content container">
+           <div class="row justify-content-center">
+               <div class="col-lg-6">
+                   <h1 class="text-center text-white">Boost Your Computer!</h1>
+                   <p class="text-center text-white">Select the amount of RAM you'd like to download:</p>
+                   
+                   <div class="btn-group btn-group-toggle mb-3" data-toggle="buttons">
+                       <label class="btn btn-light active">
+                           <input type="radio" name="ramOptions" id="option1" value="1" checked> 1GB
+                       </label>
+                       <label class="btn btn-light">
+                           <input type="radio" name="ramOptions" id="option2" value="2"> 2GB
+                       </label>
+                       <label class="btn btn-light">
+                           <input type="radio" name="ramOptions" id="option4" value="4"> 4GB
+                       </label>
+                       <label class="btn btn-light">
+                           <input type="radio" name="ramOptions" id="option8" value="8"> 8GB
+                       </label>
+                       <label class="btn btn-light">
+                           <input type="radio" name="ramOptions" id="option16" value="16"> 16GB
+                       </label>
+                       <label class="btn btn-light">
+                           <input type="radio" name="ramOptions" id="option32" value="32"> 32GB
+                       </label>
+                       <label class="btn btn-light">
+                           <input type="radio" name="ramOptions" id="option64" value="64"> 64GB
+                       </label>
+                       <label class="btn btn-light">
+                           <input type="radio" name="ramOptions" id="option128" value="128"> 128GB
+                       </label>
+                       <label class="btn btn-light">
+                           <input type="radio" name="ramOptions" id="option256" value="256"> 256GB
+                       </label>
+                   </div>
+        
+                   <button class="btn btn-light btn-block" onclick="downloadRam()">Download RAM</button>
+                   <p id="downloadStatus" class="text-center mt-2 text-white"></p>
+                   <div class="progress mt-3">
+                       <div class="progress-bar progress-bar-custom" id="progressBar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                   </div>
+
+
+            
+                </div>
+            </div>
+        </div>
+        <!-- Contact Section -->
+        <div class="container mt-5" id="contactSection">
+            <h2 class="text-center text-white">Contact Us</h2>
+            <form action="https://getform.io/f/1786efd3-77bc-4f45-a62a-2b210cd3e5c9" method="POST" class="mt-4">
+
+                <div class="form-group">
+                    <label for="name" class="text-white">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="text-white">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="comment" class="text-white">Comment:</label>
+                    <textarea class="form-control" id="comment" rows="4" placeholder="Leave your comment"></textarea>
+                </div>
+                <button type="submit" class="btn btn-light btn-block">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- Required for Bootstrap's JavaScript features -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="downloadRamScript.js"></script>
+</body>
+
+</html>
