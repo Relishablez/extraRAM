@@ -29,7 +29,7 @@ Of course, we can't _actually_ download RAM (if only, right?). This website is d
 2. Navigate to the project directory and open `index.html` in your preferred browser.
 3. Enjoy the experience.
 ### B
-1. Visit: `https://extraram.uk` or `https://relishablez.github.io/extraRAM/`
+1. Visit: https://extraram.uk or https://relishablez.github.io/extraRAM/
 2. Enjoy the experience and share the fun!
 
 ## 🤝 Contributing
