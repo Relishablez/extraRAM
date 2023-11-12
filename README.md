@@ -25,11 +25,11 @@ Of course, we can't _actually_ download RAM (if only, right?). This website is d
 
 ## 📥 Installation and Usage
 ### A
-1. Clone the repo: `git clone https://github.com/your-username/ram-booster-website.git`
-2. Navigate to the project directory and open `downloadRam.html` in your preferred browser.
+1. Clone the repo: `https://github.com/Relishablez/extraRAM.git`
+2. Navigate to the project directory and open `index.html` in your preferred browser.
 3. Enjoy the experience.
 ### B
-1. Visit: `{website}`
+1. Visit: `https://extraram.uk` or `https://relishablez.github.io/extraRAM/`
 2. Enjoy the experience and share the fun!
 
 ## 🤝 Contributing
